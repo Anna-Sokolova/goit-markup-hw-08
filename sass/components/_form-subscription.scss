@@ -2,6 +2,9 @@
   @media screen and (max-width: $desktop - 1) {
     text-align: center;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    width: 450px;
+  }
 }
 
 .label-title {
@@ -35,6 +38,10 @@
   background-color: transparent;
 
   @media screen and (max-width: $tablet - 1) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     width: 100%;
     margin-bottom: 20px;
   }
