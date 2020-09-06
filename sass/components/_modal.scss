@@ -23,9 +23,7 @@
   transform: translate(-50%, -50%);
 
   width: 100%;
-  // max-width: 528px;
-  // min-height: 581px;    если не имеет смысла, то удалить
-  min-height: auto;
+  height: 609px;
   padding: 40px;
 
   background-color: $white-text-color;
@@ -35,6 +33,11 @@
 
   @media screen and (max-width: $desktop - 1) {
     max-width: 450px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    max-width: 528px;
+    min-height: 581px;
   }
 }
 
