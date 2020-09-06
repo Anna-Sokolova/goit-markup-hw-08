@@ -6,6 +6,18 @@
   @extend %list;
   // display: flex;
   // flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+  }
 }
 
 .team-item {
@@ -21,6 +33,20 @@
   //   margin-right: 0;
   // }
 
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+  }
   &:not(:last-child) {
     @media screen and (max-width: $tablet - 1) {
       margin-bottom: 30px;
