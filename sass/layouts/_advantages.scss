@@ -27,6 +27,11 @@
   // &:nth-child(4n) {
   //   margin-right: 0;
   // }
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 /* .advantages-item:not(:last-child) {
@@ -71,6 +76,10 @@
   text-transform: uppercase;
 
   color: $title-text-color;
+
+  @media screen and (max-width: $tablet - 1) {
+    text-align: center;
+  }
 }
 
 .advantages-text {

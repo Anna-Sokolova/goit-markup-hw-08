@@ -1,13 +1,17 @@
 .contacts-list {
   @extend %list;
+
   // display: flex;
   // align-items: baseline;
   // margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
-  & .contacts-item:not(:last-child) {
-    margin-right: 30px;
+  // & .contacts-item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
   }
 }
 
@@ -17,8 +21,8 @@
   // vertical-align: middle;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  // font-size: 14px;
+  // line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: $basic-text-color;

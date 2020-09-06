@@ -1,11 +1,24 @@
-// .main-nav {
-//   display: flex;
-// }
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 60px;
 
-// .nav {
-//   display: flex;
-//   align-items: center;
-// }
+  @media screen and (min-width: $tablet) {
+    min-height: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.nav {
+  // display: flex;
+  // align-items: center;
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+}
 
 .nav-item {
   position: relative;
@@ -32,15 +45,15 @@
   @extend %list;
   // display: flex;
 
-  & .nav-item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // & .nav-item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .nav-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  // font-size: 14px;
+  // line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: $title-text-color;
