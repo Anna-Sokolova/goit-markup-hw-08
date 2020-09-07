@@ -801,6 +801,15 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: -15px;
+  }
+}
+
 .team-item {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -813,6 +822,16 @@ button {
     margin: 15px;
   }
   .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+  .team-item:nth-last-child(-n + 4) {
     margin-bottom: 0;
   }
 }

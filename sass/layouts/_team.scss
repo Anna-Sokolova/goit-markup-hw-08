@@ -14,9 +14,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: -15px;
   }
 }
 
@@ -46,7 +47,14 @@
     // display: flex;
     // flex-wrap: wrap;
     // align-items: baseline;
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
   }
+
   &:not(:last-child) {
     @media screen and (max-width: $tablet - 1) {
       margin-bottom: 30px;
