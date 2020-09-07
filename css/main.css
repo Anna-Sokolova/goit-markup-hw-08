@@ -1183,7 +1183,6 @@ div.team-box {
 
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 94px 15px;
     overflow-y: scroll;
   }
 }
@@ -1202,6 +1201,7 @@ div.team-box {
 
 .modal {
   width: 100%;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #ffffff;
@@ -1219,9 +1219,9 @@ div.team-box {
   .modal {
     max-width: 450px;
     position: relative;
-    top: 50%;
+    top: 94px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 }
 
