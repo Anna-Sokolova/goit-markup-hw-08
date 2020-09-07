@@ -35,7 +35,7 @@
     max-width: 450px;
   }
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     max-width: 528px;
     min-height: 581px;
   }

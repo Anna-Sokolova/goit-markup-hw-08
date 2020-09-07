@@ -1,6 +1,4 @@
 .filter-container {
-  // margin-bottom: 34px;
-
   @media screen and (max-width: $tablet - 1) {
     margin-bottom: 40px;
   }
@@ -13,11 +11,14 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     justify-content: center;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
 
@@ -28,12 +29,6 @@
     margin-bottom: 15px;
   }
 }
-
-// .filter-item:nth-last-child(-n + 2) {
-//   @media screen and (max-width: $tablet - 1) {
-//     margin-bottom: 0;
-//   }
-// }
 
 .filter-button {
   display: block;

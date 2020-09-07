@@ -1168,7 +1168,7 @@ div.team-box {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
     min-height: 581px;
