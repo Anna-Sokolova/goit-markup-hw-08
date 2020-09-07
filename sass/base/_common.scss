@@ -8,6 +8,10 @@ body {
   letter-spacing: 0.03em;
 
   background-color: $basic-background-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .container {
