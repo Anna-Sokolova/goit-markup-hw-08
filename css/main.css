@@ -429,23 +429,13 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
   .main-nav {
     min-height: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main-nav {
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    justify-content: space-between;
+    position: relative;
   }
 }
 
@@ -457,6 +447,21 @@ button {
 @media screen and (max-width: 767px) {
   .mobile-nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 453px;
+    z-index: 99;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .mobile-nav.is-open {
+    display: block;
   }
 }
 
@@ -616,6 +621,34 @@ button {
 .btn-submit:disabled:hover {
   background-color: #757575;
   color: #212121;
+}
+
+.menu-button {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .social-list {
@@ -1144,6 +1177,13 @@ div.team-box {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 94px 15px;
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   /* visibility: hidden; */
   opacity: 0;
@@ -1151,10 +1191,6 @@ div.team-box {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 609px;
   padding: 40px;
@@ -1163,9 +1199,19 @@ div.team-box {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1173,6 +1219,10 @@ div.team-box {
   .modal {
     max-width: 528px;
     min-height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
