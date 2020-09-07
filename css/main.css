@@ -928,6 +928,7 @@ div.team-box {
   .main-footer {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -1042,6 +1043,19 @@ div.team-box {
   .email {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email {
+    display: flex;
   }
 }
 

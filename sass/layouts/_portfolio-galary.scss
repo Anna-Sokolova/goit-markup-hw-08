@@ -50,6 +50,10 @@
   }
 }
 
+.card ~ .project-caption {
+  flex-grow: 1;
+}
+
 .img-card {
   position: relative;
   overflow: hidden;
