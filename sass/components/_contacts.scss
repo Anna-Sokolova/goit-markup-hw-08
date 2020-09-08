@@ -2,7 +2,7 @@
   @extend %list;
 
   @media screen and (max-width: $tablet - 1) {
-    display: none;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -24,6 +24,12 @@
   }
 }
 .contacts-item {
+  @media screen and (max-width: $tablet - 1) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     margin-bottom: 10px;
 
@@ -42,6 +48,11 @@
   color: $basic-text-color;
 
   transition: color $transition-duration $transition-timing-function;
+
+  @media screen and (max-width: $tablet - 1) {
+    font-size: 18px;
+    line-height: 1.166;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     font-size: 14px;
