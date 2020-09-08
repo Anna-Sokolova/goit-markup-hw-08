@@ -48,6 +48,8 @@
   border: none;
   background-color: transparent;
 
+  transition: color $transition-duration $transition-timing-function;
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -63,4 +65,18 @@
   &.is-open .icon-menu {
     display: none;
   }
+
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    color: $accent-color;
+  }
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    color: $accent-color;
+  }
+}
+
+.icon-menu,
+.icon-cross {
+  fill: currentColor;
 }
