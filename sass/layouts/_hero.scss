@@ -1,7 +1,7 @@
 .overlay {
   display: block;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -11,12 +11,33 @@
       $hero-background-color,
       $hero-background-color
     ),
-    url('../img/header.jpg');
+    url('../img/mobile/header-mob.jpg');
 
   background-color: $hero-background-color;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        $hero-background-color,
+        $hero-background-color
+      ),
+      url('../img/tablet/header-tab.jpg');
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to bottom,
+        $hero-background-color,
+        $hero-background-color
+      ),
+      url('../img/desktop/header.jpg');
+  }
 }
 
 .hero {
